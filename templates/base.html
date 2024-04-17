@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'images/icons/a.ico')}}"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap-4.5.0/bootstrap.min.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'css/navbar_footer/navbar.min.css')}}">
+    {% block css_links %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<!-- Navbar Starts -->
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-color">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    </div>
+</nav>
+<!-- Navbar Ends -->
+
+{% block content %}{% endblock %}
+
+<!-- Footer Starts -->
+<footer id="sticky-footer" class="py-3 navbar-color footer">
+
+</footer>
+<!-- Footer Ends -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{{url_for('static', filename = 'js/jquery-3.5.1.slim.min.js')}}"></script>
+<script src="{{url_for('static', filename = 'js/popper.min.js')}}"></script>
+<script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+{% block js_scripts %}{% endblock %}
+</body>
+</html>
