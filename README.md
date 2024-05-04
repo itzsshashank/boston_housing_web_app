@@ -3,3 +3,4 @@
 
 
 ## Web App Preview
+![Boston Housing Web App Demo](https://github.com/itzsshashank/boston_housing_web_app/blob/main/Assets/boston_project_final%20(1).gif)
